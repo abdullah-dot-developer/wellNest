@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html {
+    font-family: 'Jost', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Customize the width and height */
+::-webkit-scrollbar {
+    width: 8px;
+    /* Vertical scrollbar */
+    height: 8px;
+    /* Horizontal scrollbar */
+}
+
+/* Scrollbar Track (background) */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Light gray */
+    border-radius: 0;
+    /* Rounded corners */
+}
+
+/* Scrollbar Handle */
+::-webkit-scrollbar-thumb {
+    background: #5f77ff;
+    /* Scrollbar color */
+    border-radius: 0;
+    /* Rounded corners */
+}
+
+/* Scrollbar Handle on Hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #4b63cc;
+    /* Darker blue on hover */
+}
