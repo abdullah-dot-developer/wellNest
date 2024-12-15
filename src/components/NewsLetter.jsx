@@ -1,6 +1,6 @@
 import React from "react";
 import appleStore from "../assets/Appstore1.png";
-import playStore from "../assets/playStore1.webp";
+import playStore from "../assets/playstore1.webp";
 import appleGallery from "../assets/appGallery.jpeg";
 import downloadImg from "../assets/CTA2.png";
 

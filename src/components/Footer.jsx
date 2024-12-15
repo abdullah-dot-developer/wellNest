@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../assets/3.svg";
 import appleStore from "../assets/Appstore1.png";
-import playStore from "../assets/playStore1.webp";
+import playStore from "../assets/playstore1.webp";
 import appleGallery from "../assets/appGallery.jpeg";
 import {
   TiSocialFacebook,
