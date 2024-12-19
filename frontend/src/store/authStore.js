@@ -14,7 +14,7 @@ export const useAuthStore = create((set) => ({
     checkAuth: async () => {
         set({ isCheckingAuth: true });
         try {
-            const res = await axios.get(`http://localhost:3000/api/auth/me`);
+            const res = await axios.get(`https://wellnest-ctr3.onrender.com/api/auth/me`);
             set({ user: res?.data?.user, isAuthenticated: true, isCheckingAuth: false });
         } catch (error) {
             set({ error: error?.response?.data?.message, user: null, isAuthenticated: false, isCheckingAuth: false });
@@ -24,7 +24,7 @@ export const useAuthStore = create((set) => ({
     signup: async (name, email, password) => {
         set({ isLoading: true, error: null, message: null });
         try {
-            const res = await axios.post(`http://localhost:3000/api/auth/sign-up`, {
+            const res = await axios.post(`https://wellnest-ctr3.onrender.com/api/auth/sign-up`, {
                 name,
                 email,
                 password,
@@ -48,7 +48,7 @@ export const useAuthStore = create((set) => ({
     login: async (email, password) => {
         set({ isLoading: true, error: null, message: null });
         try {
-            const res = await axios.post(`http://localhost:3000/api/auth/login`, {
+            const res = await axios.post(`https://wellnest-ctr3.onrender.com/api/auth/login`, {
                 email,
                 password,
             });
@@ -71,7 +71,7 @@ export const useAuthStore = create((set) => ({
     logout: async () => {
         set({ isLoading: true })
         try {
-            const res = await axios.get(`http://localhost:3000/api/auth/logout`);
+            const res = await axios.get(`https://wellnest-ctr3.onrender.com/api/auth/logout`);
             // console.log(res);
             set({ message: res?.data?.message, isLoading: false, isAuthenticated: false, user: null });
         } catch (error) {
@@ -85,7 +85,7 @@ export const useAuthStore = create((set) => ({
     updateProfileImage: async (profileImg) => {
         set({ isLoading: true, error: null, message: null });
         try {
-            const res = await axios.put(`http://localhost:3000/api/auth/update-img`, {
+            const res = await axios.put(`https://wellnest-ctr3.onrender.com/api/auth/update-img`, {
                 profileImg,
             }, { withCredentials: true });
             // console.log(res);
@@ -115,7 +115,7 @@ export const useAuthStore = create((set) => ({
     ) => {
         set({ isLoading: true, error: null })
         try {
-            const res = await axios.post(`http://localhost:3000/api/auth/share-info`, {
+            const res = await axios.post(`https://wellnest-ctr3.onrender.com/api/auth/share-info`, {
                 fullName,
                 subject,
                 email,
