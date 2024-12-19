@@ -127,7 +127,7 @@ export const useAuthStore = create((set) => ({
 
             set({ message: res?.data?.message, isLoading: false, })
         } catch (error) {
-            console.log(error)
+            // console.log(error)
             set({
                 error: error?.response?.data?.message || error.message,
                 isLoading: false,
