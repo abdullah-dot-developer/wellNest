@@ -18,6 +18,7 @@ const ContactForm = () => {
   };
 
   const { postInfo, error, message: messageR, isLoading } = useAuthStore();
+  console.log(error);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -41,7 +42,7 @@ const ContactForm = () => {
       setMessage("");
     } catch (err) {
       console.log(err);
-      toast.error(error);
+      toast.error(error || "Something went wrong");
     }
   };
 

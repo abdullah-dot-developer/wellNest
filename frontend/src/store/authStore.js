@@ -124,10 +124,12 @@ export const useAuthStore = create((set) => ({
                 city,
                 message,
             })
+
             set({ message: res?.data?.message, isLoading: false, })
         } catch (error) {
+            console.log(error)
             set({
-                error: error?.response?.data?.message || "Failed to update profile image",
+                error: error?.response?.data?.message || error.message,
                 isLoading: false,
             });
             throw error;
