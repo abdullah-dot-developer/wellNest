@@ -12,7 +12,7 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
-    origin: "well-nest-beta.vercel.app",
+    origin: "https://well-nest-beta.vercel.app",
     credentials: true,
 }));
 app.use(express.json({ limit: "5mb" }));
