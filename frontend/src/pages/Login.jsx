@@ -6,7 +6,6 @@ import loginImg from "../assets/login.png";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 import { useAuthStore } from "../store/authStore";
-import { useAuth0 } from "@auth0/auth0-react";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -16,7 +15,6 @@ const Login = () => {
   const { login, isLoading, message, error } = useAuthStore();
 
   const navigate = useNavigate();
-  const { loginWithRedirect } = useAuth0();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -53,11 +51,7 @@ const Login = () => {
                   <FaFacebookF color="white" size={25} />
                 </span>
                 <span className="p-2 bg-red-400 rounded-full cursor-pointer">
-                  <FaGoogle
-                    onClick={() => loginWithRedirect()}
-                    color="white"
-                    size={25}
-                  />
+                  <FaGoogle color="white" size={25} />
                 </span>
               </div>
             </div>
