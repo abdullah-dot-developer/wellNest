@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import { FaFacebookF, FaGoogle } from "react-icons/fa6";
 import { LiaEyeSlashSolid, LiaEyeSolid } from "react-icons/lia";
