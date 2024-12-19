@@ -39,7 +39,6 @@ const Navbar = () => {
   const toggleModal = () => {
     setOpenModal(!openModal);
   };
-
   const [activeLink, setActiveLink] = useState("Home");
 
   const location = useLocation();
