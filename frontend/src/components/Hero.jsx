@@ -3,12 +3,8 @@ import ladyDoc from "../assets/lady.png";
 import maleDoc2 from "../assets/doctor1.png";
 import maleDoc1 from "../assets/doctor2.png";
 import hero from "../assets/hero1.png";
-import { LiaHospitalAltSolid } from "react-icons/lia";
-import { TbMedicineSyrup } from "react-icons/tb";
-import { FaUserDoctor } from "react-icons/fa6";
-import { GrDocumentTest } from "react-icons/gr";
 import MileStone from "./MileStone";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
   const navigate = useNavigate();
@@ -21,16 +17,19 @@ const Hero = () => {
               <img
                 src={ladyDoc}
                 alt="Lady doctor"
+                loading="lazy"
                 className="w-6 h-6 sm:w-10 sm:h-10 object-cover rounded-full "
               />
               <img
                 src={maleDoc1}
                 alt="Male doctor"
+                loading="lazy"
                 className="w-6 h-6 sm:w-10 sm:h-10 rounded-full "
               />
               <img
                 src={maleDoc2}
                 alt="Male doctor"
+                loading="lazy"
                 className="w-6 h-6 sm:w-10 sm:h-10 rounded-full "
               />
             </div>
@@ -55,7 +54,12 @@ const Hero = () => {
         </div>
         <div className="relative">
           <div className="flex items-center justify-center ">
-            <img src={hero} alt="hero" className="w-[900px] object-cover" />
+            <img
+              src={hero}
+              alt="hero"
+              className="w-[900px] object-cover"
+              loading="lazy"
+            />
 
             {/* <div className="absolute top-[33%] left-[12%] lg:left-[25%] 2xl:left-[30%]  flex items-center gap-1 sm:gap-2 rounded-full bg-[#ecd6fa] px-2 py-1 sm:px-3 sm:py-2">
               <span>
@@ -64,7 +68,7 @@ const Hero = () => {
               <span className="text-[0.7rem] sm:text-lg">Hospital Visit</span>
             </div>
             <div className="absolute top-[33%] right-[11%] lg:right-[23%] 2xl:right-[28%] flex items-center gap-1 sm:gap-2 rounded-full bg-[#ffb489] px-2 py-1 sm:px-3 sm:py-2">
-              <span>
+              <span> 
                 <TbMedicineSyrup className="w-3 h-3 sm:w-5 sm:h-5" />
               </span>
               <span className="text-[0.7rem] sm:text-lg">

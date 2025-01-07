@@ -56,7 +56,7 @@ const QuickActions = () => {
       </div>
       <div className="grid sm:grid-cols-[1fr,1fr] md:grid-cols-[1fr,0.8fr] lg:grid-cols-[1fr,0.5fr] items-center justify-center my-7 w-[92%] mx-auto">
         <div className="flex justify-center items-center">
-          <img src={doctor} alt="Doctors" />
+          <img src={doctor} alt="Doctors" loading="lazy" />
         </div>
         <div className="flex flex-col items-center">
           {servicesData.map((service) => (

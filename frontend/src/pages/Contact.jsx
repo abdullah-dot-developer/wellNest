@@ -20,7 +20,12 @@ const Contact = () => {
           Consult Now!
         </h1>
         <span className="relative">
-          <img src={contactImg} alt="Contact Image" className="w-[600px]" />
+          <img
+            src={contactImg}
+            alt="Contact Image"
+            className="w-[600px]"
+            loading="lazy"
+          />
           <PiCameraPlusBold className="w-8 h-8 absolute top-[20%] left-7 sm:left-16" />
           <RiMedicineBottleLine className="w-8 h-8 absolute top-[30%] right-6 sm:right-10" />
           <FaRegUser className="w-8 h-8 absolute top-[60%] right-12 sm:right-24" />

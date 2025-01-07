@@ -9,7 +9,7 @@ const NewsLetter = () => {
     <div className="bg-[#d3daff] rounded-xl w-[92%] mx-auto my-44 grid grid-cols sm:grid-cols-[1fr,1fr] items-center">
       <div>
         <div className="sm:-translate-y-16 lg:-translate-y-20 flex items-center justify-center lg:scale-125">
-          <img src={downloadImg} alt="" />
+          <img src={downloadImg} alt="" loading="lazy" />
         </div>
       </div>
       <div className="flex flex-col justify-start text-left px-10 py-10">
@@ -22,6 +22,7 @@ const NewsLetter = () => {
             <img
               src={playStore}
               alt="Play store"
+              loading="lazy"
               className="w-[100px] md:w-[150px] cursor-pointer"
             />
           </span>
@@ -29,6 +30,7 @@ const NewsLetter = () => {
             <img
               src={appleStore}
               alt="Apple store"
+              loading="lazy"
               className="w-[100px] md:w-[150px] cursor-pointer"
             />
           </span>
@@ -36,6 +38,7 @@ const NewsLetter = () => {
             <img
               src={appleGallery}
               alt="Apple Gallery"
+              loading="lazy"
               className="mix-blend-multiply w-[100px] md:w-[150px] cursor-pointer"
             />
           </span>

@@ -29,6 +29,7 @@ const ServicesPage = () => {
           <img
             src={Autonomy}
             alt="Human Autonomy"
+            loading="lazy"
             className="mix-blend-multiply"
           />
         </div>

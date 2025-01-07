@@ -44,7 +44,12 @@ const Footer = () => {
             <div className="flex items-start sm:justify-start flex-col gap-4 mt-12">
               <div className="flex items-center cursor-pointer gap-1">
                 <span className="text-white">
-                  <img src={logo} alt="Logo" className="w-10 h-10" />
+                  <img
+                    src={logo}
+                    alt="Logo"
+                    loading="lazy"
+                    className="w-10 h-10"
+                  />
                 </span>
                 <span className="text-3xl font-light text-white">
                   Well<b>Nest</b>
@@ -72,7 +77,12 @@ const Footer = () => {
               <ul className="py-2">
                 {imgLink.map((img) => (
                   <li key={img.alt} className="cursor-pointer py-2">
-                    <img src={img.link} alt={img.alt} className="w-[100px]" />
+                    <img
+                      src={img.link}
+                      alt={img.alt}
+                      className="w-[100px]"
+                      loading="lazy"
+                    />
                   </li>
                 ))}
               </ul>

@@ -21,6 +21,7 @@ const CallToAction = () => {
               <img
                 src={playStore}
                 alt="Play store"
+                loading="lazy"
                 className="w-[100px] md:w-[150px] cursor-pointer"
               />
             </span>
@@ -28,6 +29,7 @@ const CallToAction = () => {
               <img
                 src={appleStore}
                 alt="Apple store"
+                loading="lazy"
                 className="w-[100px] md:w-[150px] cursor-pointer"
               />
             </span>
@@ -35,6 +37,7 @@ const CallToAction = () => {
               <img
                 src={appleGallery}
                 alt="Apple Gallery"
+                loading="lazy"
                 className="mix-blend-multiply w-[100px] md:w-[150px] cursor-pointer"
               />
             </span>
@@ -42,7 +45,7 @@ const CallToAction = () => {
         </div>
         <div>
           <div className="lg:-translate-y-32 lg:scale-110">
-            <img src={downloadImg} alt="" />
+            <img src={downloadImg} alt="" loading="lazy" />
           </div>
         </div>
       </div>

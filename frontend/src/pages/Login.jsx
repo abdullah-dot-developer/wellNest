@@ -37,7 +37,7 @@ const Login = () => {
               <span className="pb-3 text-2xl md:text-3xl text-white font-[500] text-center">
                 Empowering Health, Enhancing Lives
               </span>
-              <img src={loginImg} alt="Login Image" />
+              <img src={loginImg} alt="Login Image" loading="lazy" />
             </div>
           </div>
           <div className="md:p-8">

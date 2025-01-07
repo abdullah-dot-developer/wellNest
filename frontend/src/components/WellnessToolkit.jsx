@@ -30,7 +30,12 @@ const WellnessToolkit = () => {
 
             {/* Images */}
             <span>
-              <img src={InsideOutImg} alt="InsideOutImage" className="" />
+              <img
+                src={InsideOutImg}
+                alt="InsideOutImage"
+                className=""
+                loading="lazy"
+              />
             </span>
           </div>
           <div className="bg-[#5f77ff] flex flex-col md:grid md:grid-cols-[1fr,0.8fr] lg:flex lg:flex-col items-center justify-center rounded-2xl">

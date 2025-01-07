@@ -17,7 +17,7 @@ export const useAuthStore = create((set) => ({
             const res = await axios.get(`https://wellnest-ctr3.onrender.com/api/auth/me`);
             set({ user: res?.data?.user, isAuthenticated: true, isCheckingAuth: false });
         } catch (error) {
-            set({ error: error?.response?.data?.message, user: null, isAuthenticated: false, isCheckingAuth: false });
+            set({ error: error?.response?.data?.message || error.message, user: null, isAuthenticated: false, isCheckingAuth: false });
         }
     },
 

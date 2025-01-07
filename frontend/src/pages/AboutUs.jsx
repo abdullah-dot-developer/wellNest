@@ -34,6 +34,7 @@ const AboutUs = () => {
           <img
             src={aboutImage}
             alt="About Image"
+            loading="lazy"
             className="md:w-[800px]  flex items-center mx-auto lg:scale-125"
           />
         </div>

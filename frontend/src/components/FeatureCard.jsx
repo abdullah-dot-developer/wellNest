@@ -6,7 +6,7 @@ const FeatureCard = ({ image, title, description }) => {
     <div className="max-w-[400px] flex flex-col items-center justify-center sm:items-start shadow-sm sm:justify-start gap-2 px-4 py-6 box-border h-[250px] xl:h-[300px] rounded-2xl bg-gradient-to-b from-gray-100 to-gray-50 hover:bg-gradient-to-b hover:from-[#5f77ff] hover:to-[#7084f5] cursor-pointer hover:text-white hover:shadow-xl relative overflow-hidden group">
       {/* Image */}
       <div>
-        <img src={image} alt={title} className="w-[70px]" />
+        <img src={image} alt={title} className="w-[70px]" loading="lazy" />
       </div>
 
       {/* Title */}

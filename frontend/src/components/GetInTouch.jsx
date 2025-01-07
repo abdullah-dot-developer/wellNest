@@ -14,6 +14,7 @@ const GetInTouch = () => {
         <img
           src={vector}
           alt="Vector Image"
+          loading="lazy"
           className="w-full h-full object-cover"
         />
       </div>

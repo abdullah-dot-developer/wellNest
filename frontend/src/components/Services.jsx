@@ -98,6 +98,7 @@ const Services = () => {
             <img
               src={serviceImg}
               alt="Service Image"
+              loading="lazy"
               className="bg-cover w-full"
             />
           </div>

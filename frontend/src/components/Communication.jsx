@@ -68,6 +68,7 @@ const Communication = () => {
           <img
             src={vector}
             alt="Vector Imge"
+            loading="lazy"
             className="absolute top-0 left-0"
           />
         </div>
