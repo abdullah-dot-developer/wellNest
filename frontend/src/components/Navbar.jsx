@@ -137,11 +137,13 @@ const Navbar = () => {
                     onClick={toggleModal}
                   />
                 ) : (
-                  <IoLogInOutline
-                    size={40}
-                    className="rounded-full cursor-pointer bg-gray-100 hover:bg-[rgb(95,119,255)] px-2 py-2 text-[#5F77FF] hover:text-gray-100"
-                    onClick={() => navigate("/login")}
-                  />
+                  <div className="flex items-center justify-center gap-2 rounded-full cursor-pointer bg-gray-100 hover:bg-[rgb(95,119,255)] px-4 py-2 text-[#5F77FF] hover:text-gray-100">
+                    <IoLogInOutline
+                      size={25}
+                      onClick={() => navigate("/login")}
+                    />
+                    <p className="hidden xl:block">Login</p>
+                  </div>
                 )}
               </span>
             </div>

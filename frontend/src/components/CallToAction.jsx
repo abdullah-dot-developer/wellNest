@@ -3,6 +3,7 @@ import appleStore from "../assets/Appstore1.png";
 import playStore from "../assets/playstore1.webp";
 import appleGallery from "../assets/appGallery.jpeg";
 import downloadImg from "../assets/dowload.png";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const CallToAction = () => {
   return (
@@ -45,7 +46,7 @@ const CallToAction = () => {
         </div>
         <div>
           <div className="lg:-translate-y-32 lg:scale-110">
-            <img src={downloadImg} alt="" loading="lazy" />
+            <LazyLoadImage src={downloadImg} alt="Image" effect="blur" />
           </div>
         </div>
       </div>

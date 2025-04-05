@@ -5,6 +5,7 @@ import maleDoc1 from "../assets/doctor2.png";
 import hero from "../assets/hero1.png";
 import MileStone from "./MileStone";
 import { useNavigate } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Hero = () => {
   const navigate = useNavigate();
@@ -14,19 +15,19 @@ const Hero = () => {
         <div className="pt-20 flex flex-col items-center justify-center">
           <div className="flex items-center justify-between border border-black rounded-full w[330px] max-w-[430px] p-2 mx-auto">
             <div className="flex -space-x-1 sm:-space-x-2 border-r-2 border-black px-3">
-              <img
+              <LazyLoadImage
                 src={ladyDoc}
                 alt="Lady doctor"
                 loading="lazy"
                 className="w-6 h-6 sm:w-10 sm:h-10 object-cover rounded-full "
               />
-              <img
+              <LazyLoadImage
                 src={maleDoc1}
                 alt="Male doctor"
                 loading="lazy"
                 className="w-6 h-6 sm:w-10 sm:h-10 rounded-full "
               />
-              <img
+              <LazyLoadImage
                 src={maleDoc2}
                 alt="Male doctor"
                 loading="lazy"
@@ -54,11 +55,11 @@ const Hero = () => {
         </div>
         <div className="relative">
           <div className="flex items-center justify-center ">
-            <img
+            <LazyLoadImage
               src={hero}
               alt="hero"
               className="w-[900px] object-cover"
-              loading="lazy"
+              // loading="lazy"
             />
 
             {/* <div className="absolute top-[33%] left-[12%] lg:left-[25%] 2xl:left-[30%]  flex items-center gap-1 sm:gap-2 rounded-full bg-[#ecd6fa] px-2 py-1 sm:px-3 sm:py-2">

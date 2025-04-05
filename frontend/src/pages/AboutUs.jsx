@@ -9,6 +9,7 @@ import Expertise from "../components/Expertise";
 import GetInTouch from "../components/GetInTouch";
 import NewsLetter from "../components/NewsLetter";
 import { useNavigate } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const AboutUs = () => {
   const navigate = useNavigate();
@@ -31,10 +32,9 @@ const AboutUs = () => {
           </button>
         </div>
         <div className="py-8 md:py-16">
-          <img
+          <LazyLoadImage
             src={aboutImage}
             alt="About Image"
-            loading="lazy"
             className="md:w-[800px]  flex items-center mx-auto lg:scale-125"
           />
         </div>

@@ -5,25 +5,30 @@ import { LiaHospitalAltSolid } from "react-icons/lia";
 import { MdHealthAndSafety } from "react-icons/md";
 import { TbCardsFilled } from "react-icons/tb";
 import serviceImg from "../assets/service.png";
+// import serviceImg2 from "../assets/insurance.jpg";
+// import serviceImg3 from "../assets/bannHome.png";
 
 const servicesData = [
-  {
-    icon: <FaHeartCircleBolt size={20} />,
-    title: "Insurance Tech Suite",
-    description:
-      "Streamline insurance operations with advanced digital tools. Simplify claims, policies, and customer management effortlessly",
-  },
+  // {
+  //   icon: <FaHeartCircleBolt size={20} />,
+  //   title: "Insurance Tech Suite",
+  //   description:
+  //     "Streamline insurance operations with advanced digital tools. Simplify claims, policies, and customer management effortlessly",
+  //   image: serviceImg2,
+  // },
   {
     icon: <TbCardsFilled size={20} />,
     title: "Smart OPD Care System",
     description:
       "Experience seamless outpatient care with our smart, digital-driven OPD solutions. Improve patient management and efficiency.",
+    image: serviceImg,
   },
   {
     icon: <MdHealthAndSafety size={20} />,
     title: "Adaptable Health & Life Benefits",
     description:
       "Tailor health and life plans to your organization's needs. Flexible solutions for comprehensive employee coverage.",
+    // image: serviceImg3,
   },
   {
     icon: <GiHealthCapsule size={20} />,
@@ -41,6 +46,11 @@ const servicesData = [
 
 const Services = () => {
   const [active, setActive] = useState("Smart OPD Care System");
+
+  const activeService = servicesData.find(
+    (service) => service.title === active
+  );
+
   return (
     <div>
       <div className="flex flex-col items-center">
@@ -94,10 +104,10 @@ const Services = () => {
           ))}
         </div>
         <div>
-          <div className="flex items-center sm:translate-y-24 lg:-translate-y-8">
+          <div className="flex items-center sm:translate-y-24 lg:-translate-y-8 ">
             <img
               src={serviceImg}
-              alt="Service Image"
+              alt={serviceImg.title}
               loading="lazy"
               className="bg-cover w-full"
             />

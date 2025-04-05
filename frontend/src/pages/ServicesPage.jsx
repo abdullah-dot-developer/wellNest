@@ -6,6 +6,7 @@ import WellnessToolkit from "../components/WellnessToolkit";
 import NewsLetter from "../components/NewsLetter";
 import GetInTouch from "../components/GetInTouch";
 import { useNavigate } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const ServicesPage = () => {
   const navigate = useNavigate();
@@ -26,7 +27,7 @@ const ServicesPage = () => {
           >
             Get in Touch
           </button>
-          <img
+          <LazyLoadImage
             src={Autonomy}
             alt="Human Autonomy"
             loading="lazy"
